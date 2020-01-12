@@ -1,0 +1,18 @@
+$colors: (
+  primary: #005dff,
+  primary-light: lighten(#005dff, 40%),
+  primary-dark: darken(#005dff, 40%),
+  secondary: #fff,
+  accent: #fff6bb,
+  primary-orange : #EC5923,
+  third: #265C7E
+);
+
+$padding: 15px;
+$borders: 15px;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$desktop: 840px;
