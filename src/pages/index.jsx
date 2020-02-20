@@ -4,7 +4,7 @@ import Home from '../components/organisms/home/home'
 
 const Index = () => {
     return (
-        <Layout>
+        <Layout isLoguerUser={false}>
            <Home/>
         </Layout>
     )

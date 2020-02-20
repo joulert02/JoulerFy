@@ -1,10 +1,43 @@
 @import "../../../_shared/variables.scss";
 @import "../../../_shared/mixins.scss";
 
+@keyframes fadeInAminate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
+
+#root{
+  position: relative;
+}
+
 main {
   margin-top: 30px;
-  
+
   section#homeContainer {
+    &2 {
+      height: 100vh;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .containerFadeIn {
+        background-color: purple;
+        width: 30%;
+        height: 10%;
+        text-align: center;
+
+        &.animate{
+          animation : fadeInAminate 3s;
+        }
+      }
+    }
+    min-height: 100vh;
     @include desktop {
       display: grid;
       grid-template-columns: 50% auto;

@@ -1,0 +1,35 @@
+@import "../../../_shared/variables.scss";
+@import "../../../_shared/mixins.scss";
+
+.form-container {
+  height: 100%;
+  width: 100%;
+  
+  form {
+    width: 50%;
+    height: auto;
+    padding: 3em;
+    background-color: red;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+      label {
+        color: white;
+        margin: 10px 0;
+      }
+      input{
+        border-radius: 15px;
+        border: none;
+        padding: .5em;
+      }
+    }
+  }
+}

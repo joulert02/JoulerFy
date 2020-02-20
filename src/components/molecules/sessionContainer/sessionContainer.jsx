@@ -1,16 +1,24 @@
-import React from 'react'
+import React from "react";
 import ButtonGeneric from "../../atoms/buttonGeneric/sessionButton";
-import './sessionContainer.scss'
+import "./sessionContainer.scss";
 
 const SessionContainer = () => {
-    return (
-        <div className="sessionContainer">
-            <div className="logoutContainer">
-                <ButtonGeneric type="button button-session" text={"Sign In"} redirect= "signin" />
-                <ButtonGeneric type="button button-session" text={"Sign Out"} redirect= "signout" />
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="sessionContainer">
+      <div className="logoutContainer">
+        <ButtonGeneric
+          type="button button-session"
+          text={"Sign In"}
+          redirect="singin"
+        />
+        <ButtonGeneric
+          type="button button-session"
+          text={"Sign Out"}
+          redirect="signout"
+        />
+      </div>
+    </div>
+  );
+};
 
-export default SessionContainer
+export default SessionContainer;
