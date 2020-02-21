@@ -1,11 +1,13 @@
 import React from "react";
+import MapSalesPoint from '../components/organisms/mapSalesPoint/mapSalesPoint'
 
-const homeLogueado = () => {
+const HomeLogueado = () => {
+
   return (
-    <div>
-      <h1>ESTOY LOGUEADO</h1>
-    </div>
+    <section>
+      <MapSalesPoint />
+    </section>
   );
 };
 
-export default homeLogueado;
+export default HomeLogueado;

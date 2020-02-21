@@ -7,7 +7,7 @@ import homeLogueado from './pages/homeLogueado'
 import SingIn from './pages/singIn'
 import * as serviceWorker from './serviceWorker';
 
-const isAuthenticated = false
+const isAuthenticated = true
 
 const PrivateRoute = ({ component: Component, redirect, ...rest }) => (
     <Route {...rest} render={(props) => (
