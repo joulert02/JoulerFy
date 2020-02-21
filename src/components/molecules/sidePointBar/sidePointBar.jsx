@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './sidePointBar.scss'
 
 const SidePointBar = ({ salesPoints, activePoint, onClickMarker }) => {
@@ -6,7 +6,7 @@ const SidePointBar = ({ salesPoints, activePoint, onClickMarker }) => {
 
     return (
         <div className="sidePoints">
-            {activePoint &&
+            {(activePoint && activePoint.nombre) &&
                 <div className="info-container" onClick={() => onClickMarker(activePoint)}>
                     <p>{activePoint.nombre}</p>
                 </div>}
