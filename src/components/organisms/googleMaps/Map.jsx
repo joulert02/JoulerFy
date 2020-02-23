@@ -9,7 +9,7 @@ const Map = ({ salesPoints, activePoint }) => {
     const localizator = (position) => {
         setInitialPosition({ ...[], latitude: position.coords.latitude, longitude: position.coords.longitude })
     }
-
+    
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(localizator, () => console.log("ERROR"))
     }, [])
