@@ -1,20 +1,13 @@
 import React from 'react'
 import './sidePointBar.scss'
 
-const SidePointBar = ({ salesPoints, activePoint, onClickMarker }) => {
-
+const SidePointBar = ({ salesPointsInfo, activePoint, onClickMarker }) => {
 
     return (
         <div className="sidePoints">
-            {(activePoint && activePoint.nombre) &&
-                <div className="info-container" onClick={() => onClickMarker(activePoint)}>
-                    <p>{activePoint.nombre}</p>
-                </div>}
-
-            {salesPoints.map((element, index) => {
+            {salesPointsInfo.map((element, index) => {
                 return (
-                    (element !== activePoint) &&
-                    <div className="info-container" key={index} onClick={() => onClickMarker(element)}>
+                    <div className={activePoint === element ? "info-container active" : "info-container"} key={index} onClick={() => onClickMarker(element)}>
                         <p>{element.nombre}</p>
                     </div>
                 )
