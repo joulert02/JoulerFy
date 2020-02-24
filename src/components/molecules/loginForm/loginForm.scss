@@ -1,0 +1,39 @@
+@import "../../../_shared/variables.scss";
+@import "../../../_shared/mixins.scss";
+
+.login-form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 5px;
+
+  input {
+    width: 90%;
+    max-width: $max-width-mobile;
+    padding: 10px 5px;
+    margin: 5px 0;
+    color: $light-gray;
+
+    :focus{
+      border-color: black;
+    }
+  }
+
+  .remember-container {
+    width: 90%;
+    max-width: $max-width-mobile;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px 0px 0px;
+    input {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+  }
+}

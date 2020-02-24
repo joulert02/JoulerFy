@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonGeneric from "../../atoms/buttonGeneric/sessionButton";
+import ButtonGeneric from "../../atoms/sessionButton/sessionButton";
 import "./sessionContainer.scss";
 
 const SessionContainer = () => {

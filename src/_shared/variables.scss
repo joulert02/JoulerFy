@@ -9,7 +9,13 @@ $colors: (
 );
 
 $green-primary: #1ed760;
+$green-dark: #1db954;
 $white: #fff;
+$light-white: #e6e6e6;
+$dark: #000;
+$light-dark: #333;
+$light-gray: #adadad;
+$dark-gray: #616467;
 
 $padding: 15px;
 $borders: 15px;
@@ -19,3 +25,10 @@ $borders: 15px;
 }
 
 $desktop: 840px;
+$max-width-mobile: 350px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

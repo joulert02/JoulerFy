@@ -2,7 +2,7 @@ import React from 'react'
 import './sessionButton.scss'
 import { Link } from 'react-router-dom'
 
-const ButtonGeneric = ({ type, text, redirect }) => {
+const SessionButton = ({ type, text, redirect }) => {
     return (
             <Link className={type} to={redirect}>
                 {text}
@@ -10,4 +10,4 @@ const ButtonGeneric = ({ type, text, redirect }) => {
     )
 }
 
-export default ButtonGeneric
+export default SessionButton
