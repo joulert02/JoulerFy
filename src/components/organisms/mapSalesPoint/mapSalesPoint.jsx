@@ -31,6 +31,7 @@ const MapSalesPoint = () => {
                     salesPoints={
                         <PointsSales salesPointsInfo={salesPointsInfo} onClickMarker={onClickMarker} />
                     }
+
                     activePoint={activePoint}
                 />
                 <SidePointBar salesPointsInfo={salesPointsInfo} activePoint={activePoint} onClickMarker={onClickMarker} />

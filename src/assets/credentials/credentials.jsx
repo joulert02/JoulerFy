@@ -1,3 +1,3 @@
 export default{
-    mapskey : "AIzaSyChI_eHTkKUShfj5_rDWo1BjzSlRBWVr9o"
+    mapskey : "AIzaSyCMq0gV1buVhwH2D_jzDFJiQeaZ00fWIFk"
 }
