@@ -3,13 +3,13 @@ import IconSpotify from "../../../assets/images/spotiryicon.png";
 import LoginForm from "../../molecules/loginForm/loginForm";
 import GenericButton from "../../atoms/genericButton/genericButton";
 import { Link } from "react-router-dom";
-import "./SinIngForm.scss";
+import "./SinIng.scss";
 
 const SinIngForm = () => {
   return (
     <>
       <header className="Header-login">
-        <Link to="/home">
+        <Link to="/">
           <img src={IconSpotify} alt="logo"></img>
           <h1>JoulerFy</h1>
         </Link>

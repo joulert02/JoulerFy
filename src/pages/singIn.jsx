@@ -1,10 +1,10 @@
 import React from "react";
-import SinIngForm from "../components/organisms/SinIngForm/SinIngForm";
+import SinIng from "../components/organisms/SinIng/SinIng";
 
 const singIn = () => {
   return (
     <>
-      <SinIngForm />
+      <SinIng />
     </>
   );
 };

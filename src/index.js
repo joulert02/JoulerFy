@@ -21,6 +21,7 @@ const routing = (
     <Router>
         <Switch>
             <Route exact path="/" component={Index} />
+            <Route exact path="/home" component={Index} />
             <Route exact path="/singin" component={SingIn} />
             <PrivateRoute path="/homelogueado" component={homeLogueado}/>
             {/* <Route path="/singOut" component={<SingOut/>} /> */}

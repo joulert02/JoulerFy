@@ -33,6 +33,7 @@
       border: 1px $dark-white solid;
       background-color: $white;
       font-size: 16px;
+      color: $gray;
 
       &:focus {
         border-color: $light-gray;
@@ -41,15 +42,19 @@
       &.password-input {
         padding-right: 50px;
       }
-    }
 
+      &::placeholder {
+        color: $light-gray;
+        opacity: 1; /* Firefox */
+      }
+    }
     .icon-eye {
       position: absolute;
       font-size: 2em;
       right: 0;
       margin: 3px 10px;
       cursor: pointer;
-      color: $gray;
+      color: $light-gray;
     }
   }
 

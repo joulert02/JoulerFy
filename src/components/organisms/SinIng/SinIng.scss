@@ -7,24 +7,28 @@
   border-bottom: 1px solid #d9dadc;
   background-color: $dark;
   margin-bottom: 2em;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+
   @include desktop {
     margin-bottom: 4em;
     height: 90px;
   }
   a {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: $white;
-    
+    margin: 0 auto;
+
+    &:hover img {
+      animation: circle-animation 1s infinite;
+    }
+
     img {
       width: 80px;
-      &:hover {
-        animation: circle-animation 1s infinite;
-      }
+
       @include desktop {
         width: 100px;
       }
